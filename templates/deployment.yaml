@@ -1,61 +1,47 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: {{ include "Fedodo.Chart.fullname" . }}
-  labels:
-    {{- include "Fedodo.Chart.labels" . | nindent 4 }}
+  name: fedodo-deployment
+  namespace: dev-fedodo
 spec:
-  {{- if not .Values.autoscaling.enabled }}
-  replicas: {{ .Values.replicaCount }}
-  {{- end }}
   selector:
     matchLabels:
-      {{- include "Fedodo.Chart.selectorLabels" . | nindent 6 }}
+      app: fedodo
   template:
     metadata:
-      {{- with .Values.podAnnotations }}
-      annotations:
-        {{- toYaml . | nindent 8 }}
-      {{- end }}
       labels:
-        {{- include "Fedodo.Chart.selectorLabels" . | nindent 8 }}
+        app: fedodo
     spec:
-      {{- with .Values.imagePullSecrets }}
-      imagePullSecrets:
-        {{- toYaml . | nindent 8 }}
-      {{- end }}
-      serviceAccountName: {{ include "Fedodo.Chart.serviceAccountName" . }}
-      securityContext:
-        {{- toYaml .Values.podSecurityContext | nindent 8 }}
       containers:
-        - name: {{ .Chart.Name }}
-          securityContext:
-            {{- toYaml .Values.securityContext | nindent 12 }}
-          image: "{{ .Values.image.repository }}:{{ .Values.image.tag | default .Chart.AppVersion }}"
-          imagePullPolicy: {{ .Values.image.pullPolicy }}
-          ports:
-            - name: http
-              containerPort: {{ .Values.service.port }}
-              protocol: TCP
-          livenessProbe:
-            httpGet:
-              path: /
-              port: http
-          readinessProbe:
-            httpGet:
-              path: /
-              port: http
+        - name: fedodo
+          image: fedodo/fedodo.server:dev_32
+          imagePullPolicy: Always
           resources:
-            {{- toYaml .Values.resources | nindent 12 }}
-      {{- with .Values.nodeSelector }}
-      nodeSelector:
-        {{- toYaml . | nindent 8 }}
-      {{- end }}
-      {{- with .Values.affinity }}
-      affinity:
-        {{- toYaml . | nindent 8 }}
-      {{- end }}
-      {{- with .Values.tolerations }}
-      tolerations:
-        {{- toYaml . | nindent 8 }}
-      {{- end }}
+            limits:
+              memory: "1Gi"
+              cpu: "1"
+          ports:
+            - containerPort: 80
+              name: port-http
+          env:
+            - name: DOMAINNAME
+              value: "dev.fedodo.social"
+            - name: MONGO_HOSTNAME
+              value: "cluster0.mnp03hj.mongodb.net"
+            - name: MONGO_USERNAME
+              value: "root"
+            - name: MONGO_PASSWORD
+              valueFrom:
+                secretKeyRef:
+                  name: fedodo-secrets
+                  key: mongodb-password
+            - name: API_ENCRYPTION_CERT
+              valueFrom:
+                secretKeyRef:
+                  name: fedodo-certs
+                  key: fedodo-encryption
+            - name: API_SIGNING_CERT
+              valueFrom:
+                secretKeyRef:
+                  name: fedodo-certs
+                  key: fedodo-signing

@@ -1,15 +1,12 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: {{ include "Fedodo.Chart.fullname" . }}
-  labels:
-    {{- include "Fedodo.Chart.labels" . | nindent 4 }}
+  name: fedodo-service
+  namespace: dev-fedodo
 spec:
-  type: {{ .Values.service.type }}
-  ports:
-    - port: {{ .Values.service.port }}
-      targetPort: http
-      protocol: TCP
-      name: http
   selector:
-    {{- include "Fedodo.Chart.selectorLabels" . | nindent 4 }}
+    app: fedodo
+  ports:
+    - port: 80
+      targetPort: port-http
+      name: http
