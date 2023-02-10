@@ -1,20 +1,24 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: fedodo-deployment
-  namespace: dev-fedodo
+  name: {{ .Values.name }}-deployment
+  namespace: {{ .Values.namespace }}
 spec:
   selector:
     matchLabels:
-      app: fedodo
+      app: {{ .Values.name }}
   template:
     metadata:
       labels:
-        app: fedodo
+        app: {{ .Values.name }}
     spec:
       containers:
         - name: fedodo
-          image: fedodo/fedodo.server:dev_32
+          {{ if eq .Values.fedodoServer.useDevelopmentBuild true }}
+          image: "fedodo/fedodo.server:dev_32"
+          {{ else }}
+          image: "fedodo/fedodo.server:0.1.130"
+          {{ end }}
           imagePullPolicy: Always
           resources:
             limits:
@@ -25,7 +29,7 @@ spec:
               name: port-http
           env:
             - name: DOMAINNAME
-              value: "dev.fedodo.social"
+              value: {{ .Values.domainName }}
             - name: MONGO_HOSTNAME
               value: "cluster0.mnp03hj.mongodb.net"
             - name: MONGO_USERNAME
