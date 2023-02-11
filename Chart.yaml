@@ -1,0 +1,6 @@
+apiVersion: v2
+name: Fedodo.Chart
+description: This is the official chart for Fedodo. Fedodo is a social media platform with a modular design and many different UIs.
+type: application
+version: 0.0.1 # Chart Version
+appVersion: "0.0.1" # Application Version

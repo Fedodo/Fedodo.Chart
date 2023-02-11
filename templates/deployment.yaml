@@ -1,0 +1,53 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: {{ .Values.name }}-deployment
+  namespace: {{ .Values.namespace }}
+spec:
+  selector:
+    matchLabels:
+      app: {{ .Values.name }}
+  template:
+    metadata:
+      labels:
+        app: {{ .Values.name }}
+    spec:
+      containers:
+        - name: fedodo
+          {{ if eq .Values.fedodoServer.useDevelopmentBuild true }}
+          image: "fedodo/fedodo.server:dev_32"
+          {{ else if ne .Values.fedodoServer.customContainerVersion "" }}
+          image: {{quote .Values.fedodoServer.customContainerVersion}}
+          {{ else }}
+          image: "fedodo/fedodo.server:0.1.130"
+          {{ end }}
+          imagePullPolicy: Always
+          resources:
+            limits:
+              memory: "1Gi"
+              cpu: "1"
+          ports:
+            - containerPort: 80
+              name: port-http
+          env:
+            - name: DOMAINNAME
+              value: {{ .Values.domainName }}
+            - name: MONGO_HOSTNAME
+              value: "cluster0.mnp03hj.mongodb.net"
+            - name: MONGO_USERNAME
+              value: "root"
+            - name: MONGO_PASSWORD
+              valueFrom:
+                secretKeyRef:
+                  name: fedodo-secrets
+                  key: mongodb-password
+            - name: API_ENCRYPTION_CERT
+              valueFrom:
+                secretKeyRef:
+                  name: fedodo-certs
+                  key: fedodo-encryption
+            - name: API_SIGNING_CERT
+              valueFrom:
+                secretKeyRef:
+                  name: fedodo-certs
+                  key: fedodo-signing
