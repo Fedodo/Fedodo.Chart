@@ -14,9 +14,7 @@ spec:
     spec:
       containers:
         - name: fedodo
-          {{ if eq .Values.fedodoServer.useDevelopmentBuild true }}
-          image: "fedodo/fedodo.server:dev_32"
-          {{ else if ne .Values.fedodoServer.customContainerVersion "" }}
+          {{ if ne .Values.fedodoServer.customContainerVersion "" }}
           image: {{quote .Values.fedodoServer.customContainerVersion}}
           {{ else }}
           image: "fedodo/fedodo.server:0.1.130"
