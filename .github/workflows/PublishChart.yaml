@@ -21,7 +21,7 @@ jobs:
 
       # Publish
       - name: Push Helm Chart to DockerHub
-        uses: bsord/helm-push@4.1.0
+        uses: bsord/helm-push@v4.1.0
         with:
           username: ${{ env.DOCKERHUB_USERNAME }}
           password: ${{ secrets.DOCKERHUB_TOKEN }}
