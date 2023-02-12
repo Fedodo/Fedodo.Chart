@@ -27,4 +27,4 @@ jobs:
           password: ${{ secrets.DOCKERHUB_TOKEN }}
 
       - name: Push the image to dockerhub
-        run: helm push Fedodo.Chart-0.0.1.tgz  oci://registry-1.docker.io/${{ env.DOCKERHUB_USERNAME }}
+        run: helm push Fedodo.Chart-0.0.1.tgz  oci://registry-1.docker.io/fedodo/fedodo.chart
