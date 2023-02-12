@@ -15,17 +15,13 @@ jobs:
       # Checkout
       - uses: actions/checkout@v3
 
-      # Build
-      - name: Build the Helm Chart
-        run: helm package .
-
       # Publish
       - name: Push Helm Chart to DockerHub
         uses: bsord/helm-push@v4.1.0
         with:
           username: ${{ env.DOCKERHUB_USERNAME }}
           password: ${{ secrets.DOCKERHUB_TOKEN }}
-          registry-url: 'oci://registry-1.docker.io/${{ env.DOCKERHUB_USERNAME }}/fedodo.chart'
+          registry-url: 'oci://registry-1.docker.io/${{ env.DOCKERHUB_USERNAME }}'
           force: true
           chart-folder: .
           useOCIRegistry: true
