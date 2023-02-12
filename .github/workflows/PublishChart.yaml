@@ -27,4 +27,5 @@ jobs:
           password: ${{ secrets.DOCKERHUB_TOKEN }}
           registry-url: 'oci://registry-1.docker.io/${{ env.DOCKERHUB_USERNAME }}'
           force: true
-          chart-folder: chart
+          chart-folder: .
+          useOCIRegistry: true
