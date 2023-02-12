@@ -3,5 +3,4 @@ namespace: "fedodo"
 domainName: "fedodo.social"
 
 fedodoServer:
-  useDevelopmentBuild: false # Only for debugging purposes! Do not use this option!
   customContainerVersion: "" # Only for debugging purposes! Do not use this option!
