@@ -5,11 +5,7 @@
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
 [![MIT License][license-shield]][license-url]
-
-<!-- TODO Change the links -->
-<!-- TODO Remove if you do not have a pipeline or wakatime -->
 [![wakatime](https://wakatime.com/badge/user/d37401d6-1566-41ea-b7ab-8cc7d2c9f55b/project/931d730c-4999-4084-84d0-9639c865bcce.svg?style=for-the-badge&logo=appveyor)](https://wakatime.com/badge/user/d37401d6-1566-41ea-b7ab-8cc7d2c9f55b/project/931d730c-4999-4084-84d0-9639c865bcce.svg?style=for-the-badge&logo=appveyor)
-[![HugoBuildAndDeploy](https://img.shields.io/github/workflow/status/LNA-DEV/README-TEMPLATE/PipelineName?style=for-the-badge)](https://github.com/LNA-DEV/README-TEMPLATE/actions/workflows/PipelineName.yaml)  
 
 <!-- PROJECT LOGO -->
 <!-- TODO Change the Link -->
@@ -82,15 +78,13 @@ The code is distributed under the MIT License. See `LICENSE` for more informatio
 - [Markdown-Badges](https://github.com/Ileriayo/markdown-badges)
 
 <!-- MARKDOWN LINKS & IMAGES -->
-<!-- TODO Update your user name -->
-<!-- TODO Update your project name -->
-[contributors-shield]: https://img.shields.io/github/contributors/lna-dev/README-TEMPLATE.svg?style=for-the-badge
-[contributors-url]: https://github.com/lna-dev/README-TEMPLATE/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/lna-dev/README-TEMPLATE.svg?style=for-the-badge
-[forks-url]: https://github.com/lna-dev/README-TEMPLATE/network/members
-[stars-shield]: https://img.shields.io/github/stars/lna-dev/README-TEMPLATE.svg?style=for-the-badge
-[stars-url]: https://github.com/lna-dev/README-TEMPLATE/stargazers
-[issues-shield]: https://img.shields.io/github/issues/lna-dev/README-TEMPLATE.svg?style=for-the-badge
-[issues-url]: https://github.com/lna-dev/README-TEMPLATE/issues
-[license-shield]: https://img.shields.io/github/license/lna-dev/README-TEMPLATE.svg?style=for-the-badge
-[license-url]: https://github.com/lna-dev/README-TEMPLATE/blob/master/LICENSE
+[contributors-shield]: https://img.shields.io/github/contributors/Fedodo/Fedodo.Chart.svg?style=for-the-badge
+[contributors-url]: https://github.com/Fedodo/Fedodo.Chart/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/Fedodo/Fedodo.Chart.svg?style=for-the-badge
+[forks-url]: https://github.com/Fedodo/Fedodo.Chart/network/members
+[stars-shield]: https://img.shields.io/github/stars/Fedodo/Fedodo.Chart.svg?style=for-the-badge
+[stars-url]: https://github.com/Fedodo/Fedodo.Chart/stargazers
+[issues-shield]: https://img.shields.io/github/issues/Fedodo/Fedodo.Chart.svg?style=for-the-badge
+[issues-url]: https://github.com/Fedodo/Fedodo.Chart/issues
+[license-shield]: https://img.shields.io/github/license/Fedodo/Fedodo.Chart.svg?style=for-the-badge
+[license-url]: https://github.com/Fedodo/Fedodo.Chart/blob/master/LICENSE
