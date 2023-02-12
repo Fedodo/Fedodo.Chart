@@ -25,7 +25,7 @@ jobs:
         with:
           username: ${{ env.DOCKERHUB_USERNAME }}
           password: ${{ secrets.DOCKERHUB_TOKEN }}
-          registry-url: 'oci://registry-1.docker.io/${{ env.DOCKERHUB_USERNAME }}'
+          registry-url: 'oci://registry-1.docker.io/${{ env.DOCKERHUB_USERNAME }}/fedodo.chart'
           force: true
           chart-folder: .
           useOCIRegistry: true
