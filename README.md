@@ -5,34 +5,30 @@
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
 [![MIT License][license-shield]][license-url]
-[![wakatime](https://wakatime.com/badge/user/d37401d6-1566-41ea-b7ab-8cc7d2c9f55b/project/931d730c-4999-4084-84d0-9639c865bcce.svg?style=for-the-badge&logo=appveyor)](https://wakatime.com/badge/user/d37401d6-1566-41ea-b7ab-8cc7d2c9f55b/project/931d730c-4999-4084-84d0-9639c865bcce.svg?style=for-the-badge&logo=appveyor)
+[![wakatime](https://wakatime.com/badge/github/Fedodo/Fedodo.Chart.svg?style=for-the-badge&logo=appveyor)](https://wakatime.com/badge/github/Fedodo/Fedodo.Chart)
 
 <!-- PROJECT LOGO -->
-<!-- TODO Change the Link -->
-<!-- TODO Change the image -->
 <br />
 <div align="center">
-  <a href="https://github.com/lna-dev/README-TEMPLATE">
-    <img src="https://lna-dev.com/Assets/Metadata/Pingüino-Square.png" alt="Logo" width="80" height="80">
+  <a href="https://github.com/Fedodo/Fedodo.Chart">
+    <img src="https://lna-dev.net/images/Ping%C3%BCino-Square_hu9acf4bf77316305a871803d5c20fbac0_152139_148x148_fit_box_3.png" alt="Logo" width="80" height="80">
   </a>
 
-<!-- TODO Change the project name -->
-### README-Template
+### Fedodo.Chart
 
-<!-- TODO Change the description -->
-In this repository I have created a README-Template based on Best-README-Template
+This repository contains the Helm Chart for the deployment of Fedodo.
 
 <p align="center">
 
 <br />
 
 <!-- TODO Change the Link for Project, Bug and Feature -->
-<a href="https://lna-dev.com"><strong>Explore the Project »</strong></a>
+<a href="https://fedodo.org"><strong>Explore the Project »</strong></a>
 <br />
 <br />
-<a href="https://github.com/lna-dev/README-TEMPLATE/issues">Report Bug</a>
+<a href="https://github.com/Fedodo/Fedodo.Chart/issues">Report Bug</a>
 ·
-<a href="https://github.com/lna-dev/README-TEMPLATE/issues">Request Feature</a>
+<a href="https://github.com/Fedodo/Fedodo.Chart/issues">Request Feature</a>
   </p>
 </div>
 
