@@ -22,7 +22,6 @@ This repository contains the Helm Chart for the deployment of Fedodo.
 
 <br />
 
-<!-- TODO Change the Link for Project, Bug and Feature -->
 <a href="https://fedodo.org"><strong>Explore the Project »</strong></a>
 <br />
 <br />
@@ -35,24 +34,20 @@ This repository contains the Helm Chart for the deployment of Fedodo.
 <!-- ABOUT THE PROJECT -->
 ## About The Project 🗺️
 
-<!-- TODO Tell the world about your project -->
-Here you can describe your project a little bit more. Explain the world your thoughts and what your project does. Have fun and build something.
+This Helm-Chart is currently the only proper way to install Fedodo. Only a Kubernetes Cluster is needed for the installation.
 
 <br>
 
 ## Build With 🏗️
 
-<!-- TODO Go to https://github.com/Ileriayo/markdown-badges and search for a fitting batch🙃 -->
-
-![Markdown](https://img.shields.io/badge/markdown-%23000000.svg?style=for-the-badge&logo=markdown&logoColor=white)  
 ![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)  
+![Kubernetes](https://img.shields.io/badge/kubernetes-%23326ce5.svg?style=for-the-badge&logo=kubernetes&logoColor=white)  
 
 <br>
 
 <!-- CONTRIBUTING -->
 ## Contributing ✨
 
-<!-- TODO Customize the contributing text -->
 If you have any ideas or want to contribute yourself... go for it. I really appreciate it if some of you have cool ideas🚀
 
 <br>
@@ -61,17 +56,14 @@ If you have any ideas or want to contribute yourself... go for it. I really appr
 <!-- TODO Add the License description -->
 ## License 📝
 
-The code is distributed under the MIT License. See `LICENSE` for more information.
+The code is distributed under the GNU AFFERO GENERAL PUBLIC LICENSE. See `LICENSE` for more information.
 
 <br>
 
 <!-- ACKNOWLEDGMENTS -->
-<!-- TODO Add your acknowledgments -->
 ## Acknowledgments 🙏
 
 - [LNA-DEV README-Template](https://github.com/lna-dev/README-Template)
-- [Best-README-Template](https://github.com/othneildrew/Best-README-Template)
-- [Markdown-Badges](https://github.com/Ileriayo/markdown-badges)
 
 <!-- MARKDOWN LINKS & IMAGES -->
 [contributors-shield]: https://img.shields.io/github/contributors/Fedodo/Fedodo.Chart.svg?style=for-the-badge
