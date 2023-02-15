@@ -5,62 +5,49 @@
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
 [![MIT License][license-shield]][license-url]
-
-<!-- TODO Change the links -->
-<!-- TODO Remove if you do not have a pipeline or wakatime -->
-[![wakatime](https://wakatime.com/badge/user/d37401d6-1566-41ea-b7ab-8cc7d2c9f55b/project/931d730c-4999-4084-84d0-9639c865bcce.svg?style=for-the-badge&logo=appveyor)](https://wakatime.com/badge/user/d37401d6-1566-41ea-b7ab-8cc7d2c9f55b/project/931d730c-4999-4084-84d0-9639c865bcce.svg?style=for-the-badge&logo=appveyor)
-[![HugoBuildAndDeploy](https://img.shields.io/github/workflow/status/LNA-DEV/README-TEMPLATE/PipelineName?style=for-the-badge)](https://github.com/LNA-DEV/README-TEMPLATE/actions/workflows/PipelineName.yaml)  
+[![wakatime](https://wakatime.com/badge/github/Fedodo/Fedodo.Chart.svg?style=for-the-badge&logo=appveyor)](https://wakatime.com/badge/github/Fedodo/Fedodo.Chart)
 
 <!-- PROJECT LOGO -->
-<!-- TODO Change the Link -->
-<!-- TODO Change the image -->
 <br />
 <div align="center">
-  <a href="https://github.com/lna-dev/README-TEMPLATE">
-    <img src="https://lna-dev.com/Assets/Metadata/Pingüino-Square.png" alt="Logo" width="80" height="80">
+  <a href="https://github.com/Fedodo/Fedodo.Chart">
+    <img src="https://lna-dev.net/images/Ping%C3%BCino-Square_hu9acf4bf77316305a871803d5c20fbac0_152139_148x148_fit_box_3.png" alt="Logo" width="80" height="80">
   </a>
 
-<!-- TODO Change the project name -->
-### README-Template
+### Fedodo.Chart
 
-<!-- TODO Change the description -->
-In this repository I have created a README-Template based on Best-README-Template
+This repository contains the Helm Chart for the deployment of Fedodo.
 
 <p align="center">
 
 <br />
 
-<!-- TODO Change the Link for Project, Bug and Feature -->
-<a href="https://lna-dev.com"><strong>Explore the Project »</strong></a>
+<a href="https://fedodo.org"><strong>Explore the Project »</strong></a>
 <br />
 <br />
-<a href="https://github.com/lna-dev/README-TEMPLATE/issues">Report Bug</a>
+<a href="https://github.com/Fedodo/Fedodo.Chart/issues">Report Bug</a>
 ·
-<a href="https://github.com/lna-dev/README-TEMPLATE/issues">Request Feature</a>
+<a href="https://github.com/Fedodo/Fedodo.Chart/issues">Request Feature</a>
   </p>
 </div>
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project 🗺️
 
-<!-- TODO Tell the world about your project -->
-Here you can describe your project a little bit more. Explain the world your thoughts and what your project does. Have fun and build something.
+This Helm-Chart is currently the only proper way to install Fedodo. Only a Kubernetes Cluster is needed for the installation.
 
 <br>
 
 ## Build With 🏗️
 
-<!-- TODO Go to https://github.com/Ileriayo/markdown-badges and search for a fitting batch🙃 -->
-
-![Markdown](https://img.shields.io/badge/markdown-%23000000.svg?style=for-the-badge&logo=markdown&logoColor=white)  
 ![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)  
+![Kubernetes](https://img.shields.io/badge/kubernetes-%23326ce5.svg?style=for-the-badge&logo=kubernetes&logoColor=white)  
 
 <br>
 
 <!-- CONTRIBUTING -->
 ## Contributing ✨
 
-<!-- TODO Customize the contributing text -->
 If you have any ideas or want to contribute yourself... go for it. I really appreciate it if some of you have cool ideas🚀
 
 <br>
@@ -69,28 +56,23 @@ If you have any ideas or want to contribute yourself... go for it. I really appr
 <!-- TODO Add the License description -->
 ## License 📝
 
-The code is distributed under the MIT License. See `LICENSE` for more information.
+The code is distributed under the GNU AFFERO GENERAL PUBLIC LICENSE. See `LICENSE` for more information.
 
 <br>
 
 <!-- ACKNOWLEDGMENTS -->
-<!-- TODO Add your acknowledgments -->
 ## Acknowledgments 🙏
 
 - [LNA-DEV README-Template](https://github.com/lna-dev/README-Template)
-- [Best-README-Template](https://github.com/othneildrew/Best-README-Template)
-- [Markdown-Badges](https://github.com/Ileriayo/markdown-badges)
 
 <!-- MARKDOWN LINKS & IMAGES -->
-<!-- TODO Update your user name -->
-<!-- TODO Update your project name -->
-[contributors-shield]: https://img.shields.io/github/contributors/lna-dev/README-TEMPLATE.svg?style=for-the-badge
-[contributors-url]: https://github.com/lna-dev/README-TEMPLATE/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/lna-dev/README-TEMPLATE.svg?style=for-the-badge
-[forks-url]: https://github.com/lna-dev/README-TEMPLATE/network/members
-[stars-shield]: https://img.shields.io/github/stars/lna-dev/README-TEMPLATE.svg?style=for-the-badge
-[stars-url]: https://github.com/lna-dev/README-TEMPLATE/stargazers
-[issues-shield]: https://img.shields.io/github/issues/lna-dev/README-TEMPLATE.svg?style=for-the-badge
-[issues-url]: https://github.com/lna-dev/README-TEMPLATE/issues
-[license-shield]: https://img.shields.io/github/license/lna-dev/README-TEMPLATE.svg?style=for-the-badge
-[license-url]: https://github.com/lna-dev/README-TEMPLATE/blob/master/LICENSE
+[contributors-shield]: https://img.shields.io/github/contributors/Fedodo/Fedodo.Chart.svg?style=for-the-badge
+[contributors-url]: https://github.com/Fedodo/Fedodo.Chart/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/Fedodo/Fedodo.Chart.svg?style=for-the-badge
+[forks-url]: https://github.com/Fedodo/Fedodo.Chart/network/members
+[stars-shield]: https://img.shields.io/github/stars/Fedodo/Fedodo.Chart.svg?style=for-the-badge
+[stars-url]: https://github.com/Fedodo/Fedodo.Chart/stargazers
+[issues-shield]: https://img.shields.io/github/issues/Fedodo/Fedodo.Chart.svg?style=for-the-badge
+[issues-url]: https://github.com/Fedodo/Fedodo.Chart/issues
+[license-shield]: https://img.shields.io/github/license/Fedodo/Fedodo.Chart.svg?style=for-the-badge
+[license-url]: https://github.com/Fedodo/Fedodo.Chart/blob/master/LICENSE
