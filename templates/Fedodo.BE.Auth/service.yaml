@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: Service_Fedodo.BE.Auth
+  namespace: {{ .Values.namespace }}
+spec:
+  selector:
+    app: Fedodo.BE.Auth
+  ports:
+    - port: 80
+      targetPort: port-http
+      name: http
