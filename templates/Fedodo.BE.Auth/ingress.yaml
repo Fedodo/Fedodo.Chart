@@ -1,7 +1,7 @@
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
-  name: Ingress_Fedodo.BE.Auth
+  name: ingress-fedodo.be.auth
   namespace: {{ .Values.namespace }}
   annotations:
     cert-manager.io/cluster-issuer: letsencrypt
@@ -20,7 +20,7 @@ spec:
             pathType: Prefix
             backend:
               service:
-                name: Service_Fedodo.BE.Auth
+                name: service-fedodo.be.auth
                 port:
                   number: 80
 
@@ -29,7 +29,7 @@ spec:
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
-  name: {{ .Values.name }}-ingress-http
+  name: ingress-fedodo.be.auth-http
   namespace: {{ .Values.namespace }}
   annotations:
     traefik.ingress.kubernetes.io/router.entrypoints: web
@@ -43,7 +43,7 @@ spec:
             pathType: Prefix
             backend:
               service:
-                name: Service_Fedodo.BE.Auth
+                name: service-fedodo.be.auth
                 port:
                   number: 80
 
