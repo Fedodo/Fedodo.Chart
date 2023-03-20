@@ -10,9 +10,12 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://github.com/Fedodo/Fedodo.Chart">
-    <img src="https://lna-dev.net/images/Ping%C3%BCino-Square_hu9acf4bf77316305a871803d5c20fbac0_152139_148x148_fit_box_3.png" alt="Logo" width="80" height="80">
+  <a href="https://fedodo.org">
+    <img src="https://github.com/Fedodo/.github/blob/main/assets/logo%20and%20icons/Fedodo%20Circle%20Dark.png?raw=true" alt="Logo" width="200" height="200">
   </a>
+
+<br>
+<br>
 
 ### Fedodo.Chart
 
