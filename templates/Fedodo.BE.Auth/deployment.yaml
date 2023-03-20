@@ -1,16 +1,16 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: deployment-fedodo.be.auth
+  name: deployment-fedodo-be-auth
   namespace: {{ .Values.namespace }}
 spec:
   selector:
     matchLabels:
-      app: fedodo.be.auth
+      app: fedodo-be-auth
   template:
     metadata:
       labels:
-        app: fedodo.be.auth
+        app: fedodo-be-auth
     spec:
       containers:
         - name: fedodo
