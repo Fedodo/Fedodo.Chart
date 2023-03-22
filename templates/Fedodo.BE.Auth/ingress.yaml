@@ -10,34 +10,13 @@ metadata:
 spec:
   tls:
     - hosts:
-        - {{ quote .Values.domainName }}
-      secretName: {{ .Values.name }}-cert
+        - auth.{{ .Values.domainName }}
+      secretName: auth-{{ .Values.name }}-cert
   rules:
-    - host: {{ .Values.domainName }}
+    - host: auth.{{ .Values.domainName }}
       http:
         paths:
-          - path: /auth
-            pathType: Prefix
-            backend:
-              service:
-                name: service-fedodo-be-auth
-                port:
-                  number: 80
-          - path: /oauth
-            pathType: Prefix
-            backend:
-              service:
-                name: service-fedodo-be-auth
-                port:
-                  number: 80
-          - path: /api/v1/apps
-            pathType: Prefix
-            backend:
-              service:
-                name: service-fedodo-be-auth
-                port:
-                  number: 80
-          - path: /account
+          - path: /
             pathType: Prefix
             backend:
               service:
@@ -57,37 +36,17 @@ metadata:
     traefik.ingress.kubernetes.io/router.middlewares: default-redirectscheme@kubernetescrd
 spec:
   rules:
-    - host: {{ .Values.domainName }}
+    - host: auth.{{ .Values.domainName }}
       http:
         paths:
-          - path: /auth
+          - path: /
             pathType: Prefix
             backend:
               service:
                 name: service-fedodo-be-auth
                 port:
                   number: 80
-          - path: /oauth
-            pathType: Prefix
-            backend:
-              service:
-                name: service-fedodo-be-auth
-                port:
-                  number: 80
-          - path: /api/v1/apps
-            pathType: Prefix
-            backend:
-              service:
-                name: service-fedodo-be-auth
-                port:
-                  number: 80
-          - path: /account
-            pathType: Prefix
-            backend:
-              service:
-                name: service-fedodo-be-auth
-                port:
-                  number: 80
+
 
 ---
 apiVersion: traefik.containo.us/v1alpha1
