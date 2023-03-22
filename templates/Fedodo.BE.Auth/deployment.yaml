@@ -17,7 +17,7 @@ spec:
           {{ if ne .Values.microservices.fedodo_be_auth.version "" }}
           image: {{quote .Values.microservices.fedodo_be_auth.version}}
           {{ else }}
-          image: "fedodo/fedodo.be.auth:0.1.130"
+          image: "fedodo/fedodo.be.auth:dev_15"
           {{ end }}
           imagePullPolicy: Always
           resources:
