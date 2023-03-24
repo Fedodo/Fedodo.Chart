@@ -47,7 +47,6 @@ spec:
                 port:
                   number: 80
 
-
 ---
 apiVersion: traefik.containo.us/v1alpha1
 kind: Middleware

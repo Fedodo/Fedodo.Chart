@@ -1,29 +1,29 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: {{ .Values.name }}-deployment
+  name: deployment-fedodo-be-activitypub
   namespace: {{ .Values.namespace }}
 spec:
   selector:
     matchLabels:
-      app: {{ .Values.name }}
+      app: fedodo-be-activitypub
   template:
     metadata:
       labels:
-        app: {{ .Values.name }}
+        app: fedodo-be-activitypub
     spec:
       containers:
         - name: fedodo
-          {{ if ne .Values.fedodoServer.customContainerVersion "" }}
-          image: {{quote .Values.fedodoServer.customContainerVersion}}
+          {{ if ne .Values.microservices.fedodo_be_activitypub.version "" }}
+          image: {{quote .Values.microservices.fedodo_be_activitypub.version}}
           {{ else }}
-          image: "fedodo/fedodo.server:0.1.130"
+          image: "fedodo/fedodo.be.activitypub:dev_19"
           {{ end }}
           imagePullPolicy: Always
           resources:
             limits:
-              memory: "1Gi"
-              cpu: "1"
+              memory: "500Mi"
+              cpu: "500m"
           ports:
             - containerPort: 80
               name: port-http
@@ -39,13 +39,3 @@ spec:
                 secretKeyRef:
                   name: fedodo-secrets
                   key: mongodb-password
-            - name: API_ENCRYPTION_CERT
-              valueFrom:
-                secretKeyRef:
-                  name: fedodo-certs
-                  key: fedodo-encryption
-            - name: API_SIGNING_CERT
-              valueFrom:
-                secretKeyRef:
-                  name: fedodo-certs
-                  key: fedodo-signing

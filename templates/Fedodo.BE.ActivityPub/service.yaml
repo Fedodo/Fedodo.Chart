@@ -1,11 +1,11 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: {{ .Values.name }}-service
+  name: service-fedodo-be-activitypub
   namespace: {{ .Values.namespace }}
 spec:
   selector:
-    app: {{ .Values.name }}
+    app: fedodo-be-activitypub
   ports:
     - port: 80
       targetPort: port-http

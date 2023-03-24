@@ -2,9 +2,8 @@ name: "fedodo"
 namespace: "fedodo"
 domainName: "fedodo.social"
 
-fedodoServer:
-  customContainerVersion: "" # Only for debugging purposes! Do not use this option!
-
 microservices:
   fedodo_be_auth:
+    version: "" # Only for debugging purposes! Do not use this option!
+  fedodo_be_activitypub:
     version: "" # Only for debugging purposes! Do not use this option!
