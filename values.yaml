@@ -2,8 +2,9 @@ name: "fedodo"
 namespace: "fedodo"
 domainName: "fedodo.social"
 
+# DO NOT INCLUDE THIS BLOCK IN YOUR values.yaml
 microservices:
   fedodo_be_auth:
-    version: "" # Only for debugging purposes! Do not use this option!
+    version: "fedodo/fedodo.be.auth:10"
   fedodo_be_activitypub:
-    version: "" # Only for debugging purposes! Do not use this option!
+    version: "fedodo/fedodo.be.activitypub:133"

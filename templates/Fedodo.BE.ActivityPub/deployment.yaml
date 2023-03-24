@@ -14,11 +14,7 @@ spec:
     spec:
       containers:
         - name: fedodo
-          {{ if ne .Values.microservices.fedodo_be_activitypub.version "" }}
           image: {{quote .Values.microservices.fedodo_be_activitypub.version}}
-          {{ else }}
-          image: "fedodo/fedodo.be.activitypub:dev_19"
-          {{ end }}
           imagePullPolicy: Always
           resources:
             limits:
