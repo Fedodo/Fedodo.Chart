@@ -24,6 +24,8 @@ spec:
             - containerPort: 80
               name: port-http
           env:
+            - name: VERSION
+              value:  {{ .Chart.AppVersion }}
             - name: DOMAINNAME
               value: {{ .Values.domainName }}
             - name: MONGO_HOSTNAME
