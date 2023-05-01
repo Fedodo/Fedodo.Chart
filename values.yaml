@@ -5,6 +5,6 @@ domainName: "fedodo.social"
 # DO NOT INCLUDE THIS BLOCK IN YOUR values.yaml
 microservices:
   fedodo_be_auth:
-    version: "fedodo/fedodo.be.auth:10"
+    version: "fedodo/fedodo.be.auth:12"
   fedodo_be_activitypub:
     version: "fedodo/fedodo.be.activitypub:134"
