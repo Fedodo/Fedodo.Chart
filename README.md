@@ -5,7 +5,6 @@
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
 [![MIT License][license-shield]][license-url]
-[![wakatime](https://wakatime.com/badge/github/Fedodo/Fedodo.Chart.svg?style=for-the-badge&logo=appveyor)](https://wakatime.com/badge/github/Fedodo/Fedodo.Chart)
 
 <!-- PROJECT LOGO -->
 <br />
