@@ -3,7 +3,7 @@ name: fedodo.chart
 icon: https://github.com/Fedodo/.github/blob/main/assets/logo%20and%20icons/Fedodo%20Circle%20Dark.png?raw=true
 description: This is the official chart for Fedodo. Fedodo is a social media platform with a modular design and many different UIs.
 type: application
-version: 0.2.5 # Chart Version
+version: 0.2.6 # Chart Version
 appVersion: "0.3.1" # Application Version
 keywords:
   - Fedodo
