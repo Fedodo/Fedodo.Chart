@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: deployment-fedodo-ui-home
+  namespace: {{ .Values.namespace }}
+spec:
+  selector:
+    matchLabels:
+      app: fedodo-ui-home
+  template:
+    metadata:
+      labels:
+        app: fedodo-ui-home
+    spec:
+      containers:
+        - name: fedodo
+          image: {{quote .Values.microservices.fedodo_ui_home.version}}
+          imagePullPolicy: Always
+          resources:
+            limits:
+              memory: "500Mi"
+              cpu: "500m"
+          ports:
+            - containerPort: 80
+              name: port-http

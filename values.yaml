@@ -10,3 +10,5 @@ microservices:
     version: "fedodo/fedodo.be.activitypub:141"
   fedodo_ui_micro:
     version: "fedodo/fedodo.ui.micro:6"
+  fedodo_ui_home:
+    version: "fedodo/fedodo.ui.home:1"
