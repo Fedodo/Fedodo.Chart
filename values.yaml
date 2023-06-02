@@ -7,8 +7,8 @@ microservices:
   fedodo_be_auth:
     version: "fedodo/fedodo.be.auth:15"
   fedodo_be_activitypub:
-    version: "fedodo/fedodo.be.activitypub:141"
+    version: "fedodo/fedodo.be.activitypub:142"
   fedodo_ui_micro:
-    version: "fedodo/fedodo.ui.micro:6"
+    version: "fedodo/fedodo.ui.micro:7"
   fedodo_ui_home:
     version: "fedodo/fedodo.ui.home:1"
