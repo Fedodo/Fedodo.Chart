@@ -5,9 +5,9 @@ domainName: "fedodo.social"
 # DO NOT INCLUDE THIS BLOCK IN YOUR values.yaml
 microservices:
   fedodo_be_auth:
-    version: "fedodo/fedodo.be.auth:16"
+    version: "fedodo/fedodo.be.auth:17"
   fedodo_be_activitypub:
-    version: "fedodo/fedodo.be.activitypub:143"
+    version: "fedodo/fedodo.be.activitypub:144"
   fedodo_ui_micro:
     version: "fedodo/fedodo.ui.micro:7"
   fedodo_ui_home:
