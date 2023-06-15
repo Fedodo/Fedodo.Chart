@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: fedodo
-          image: {{quote .Values.microservices.fedodo_ui_home.version}}
+          image: {{ quote .Values.microservices.fedodo_ui_home.version }}
           imagePullPolicy: Always
           resources:
             limits:
@@ -23,3 +23,8 @@ spec:
           ports:
             - containerPort: 80
               name: port-http
+          env:
+            - name: CONFIG
+              value: {{ .Values.microservices.fedodo_ui_home.config }}
+            - name: MICRO_DISABLED
+              value: {{ .Values.microservices.fedodo_ui_micro.disabled }}

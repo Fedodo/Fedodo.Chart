@@ -1,25 +1,29 @@
-apiVersion: apps/v1
-kind: Deployment
-metadata:
-  name: deployment-fedodo-ui-micro
-  namespace: {{ .Values.namespace }}
-spec:
-  selector:
-    matchLabels:
-      app: fedodo-ui-micro
-  template:
-    metadata:
-      labels:
+{{ if not .Values.microservices.fedodo_ui_micro.disabled }}
+
+  apiVersion: apps/v1
+  kind: Deployment
+  metadata:
+    name: deployment-fedodo-ui-micro
+    namespace: {{ .Values.namespace }}
+  spec:
+    selector:
+      matchLabels:
         app: fedodo-ui-micro
-    spec:
-      containers:
-        - name: fedodo
-          image: {{quote .Values.microservices.fedodo_ui_micro.version}}
-          imagePullPolicy: Always
-          resources:
-            limits:
-              memory: "500Mi"
-              cpu: "500m"
-          ports:
-            - containerPort: 80
-              name: port-http
+    template:
+      metadata:
+        labels:
+          app: fedodo-ui-micro
+      spec:
+        containers:
+          - name: fedodo
+            image: {{ quote .Values.microservices.fedodo_ui_micro.version }}
+            imagePullPolicy: Always
+            resources:
+              limits:
+                memory: "500Mi"
+                cpu: "500m"
+            ports:
+              - containerPort: 80
+                name: port-http
+
+{{ end }}

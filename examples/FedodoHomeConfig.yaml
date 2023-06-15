@@ -1,0 +1,5 @@
+# This file must be minified in written into the values yaml under .Values.microservices.fedodo_ui_home.config
+# https://onlineyamltools.com/minify-yaml
+appCards:
+  - link: https://micro.dev.fedodo.social
+    image: https://fedodo.org/images/Fedodo%20Circle.png

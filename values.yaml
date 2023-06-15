@@ -2,13 +2,14 @@ name: "fedodo"
 namespace: "fedodo"
 domainName: "fedodo.social"
 
-# DO NOT INCLUDE THIS BLOCK IN YOUR values.yaml
 microservices:
   fedodo_be_auth:
-    version: "fedodo/fedodo.be.auth:20"
+    version: "fedodo/fedodo.be.auth:20" # THIS LINE SHOULD NOT BE ADDED IN YOUR VALUES FILE
   fedodo_be_activitypub:
-    version: "fedodo/fedodo.be.activitypub:147"
+    version: "fedodo/fedodo.be.activitypub:147" # THIS LINE SHOULD NOT BE ADDED IN YOUR VALUES FILE
   fedodo_ui_micro:
-    version: "fedodo/fedodo.ui.micro:9"
+    version: "fedodo/fedodo.ui.micro:9" # THIS LINE SHOULD NOT BE ADDED IN YOUR VALUES FILE
+    disabled: false
   fedodo_ui_home:
-    version: "fedodo/fedodo.ui.home:2"
+    version: "fedodo/fedodo.ui.home:2" # THIS LINE SHOULD NOT BE ADDED IN YOUR VALUES FILE
+    config: null
