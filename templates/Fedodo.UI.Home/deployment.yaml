@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: fedodo
-          image: {{ quote .Values.microservices.fedodo_ui_home.version }}
+          image: {{ .Values.microservices.fedodo_ui_home.version }}
           imagePullPolicy: Always
           resources:
             limits:
@@ -27,4 +27,4 @@ spec:
             - name: CONFIG
               value: {{ .Values.microservices.fedodo_ui_home.config }}
             - name: MICRO_DISABLED
-              value: {{ .Values.microservices.fedodo_ui_micro.disabled }}
+              value: {{ quote .Values.microservices.fedodo_ui_micro.disabled }} # This needs to be quote because it is not a string

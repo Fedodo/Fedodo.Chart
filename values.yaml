@@ -12,4 +12,4 @@ microservices:
     disabled: false
   fedodo_ui_home:
     version: "fedodo/fedodo.ui.home:2" # THIS LINE SHOULD NOT BE ADDED IN YOUR VALUES FILE
-    config: null
+    config: ""
