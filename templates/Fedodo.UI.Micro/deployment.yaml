@@ -19,9 +19,12 @@ spec:
           image: {{ quote .Values.microservices.fedodo_ui_micro.version }}
           imagePullPolicy: Always
           resources:
+            requests: 
+              memory: {{ .Values.microservices.fedodo_ui_micro.requests.memory }}
+              cpu: {{ .Values.microservices.fedodo_ui_micro.requests.cpu }}
             limits:
-              memory: "500Mi"
-              cpu: "500m"
+              memory: {{ .Values.microservices.fedodo_ui_micro.limits.memory }}
+              cpu: {{ .Values.microservices.fedodo_ui_micro.limits.cpu }}
           ports:
             - containerPort: 80
               name: port-http

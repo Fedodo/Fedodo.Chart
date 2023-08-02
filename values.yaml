@@ -10,6 +10,18 @@ microservices:
   fedodo_ui_micro:
     version: "fedodo/fedodo.ui.micro:9" # THIS LINE SHOULD NOT BE ADDED IN YOUR VALUES FILE
     disabled: false
+    requests:
+      memory: "20Mi"
+      cpu: "50m"
+    limits:
+      memory: "50Mi"
+      cpu: "100m"
   fedodo_ui_home:
     version: "fedodo/fedodo.ui.home:3" # THIS LINE SHOULD NOT BE ADDED IN YOUR VALUES FILE
     config: ""
+    requests:
+      memory: "20Mi"
+      cpu: "50m"
+    limits:
+      memory: "50Mi"
+      cpu: "100m"
