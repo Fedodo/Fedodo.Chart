@@ -8,7 +8,7 @@ microservices:
   fedodo_be_activitypub:
     version: "fedodo/fedodo.be.activitypub:147" # THIS LINE SHOULD NOT BE ADDED IN YOUR VALUES FILE
   fedodo_ui_micro:
-    version: "fedodo/fedodo.ui.micro:11" # THIS LINE SHOULD NOT BE ADDED IN YOUR VALUES FILE
+    version: "fedodo/fedodo.ui.micro:12" # THIS LINE SHOULD NOT BE ADDED IN YOUR VALUES FILE
     disabled: false
     requests:
       memory: "20Mi"
